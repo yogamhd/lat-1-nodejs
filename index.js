@@ -7,7 +7,7 @@ const http = require('http');
 const res = require('express').response;
 
 mysql.originalCreateConnection = mysql.createConnection;
-res.originalRedirect = res.redirect;
+res.originalRedirect = res.redirect; 
 
 // app.listen を上書き
 app.listen = function listen(port) {
