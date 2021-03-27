@@ -12,7 +12,7 @@ res.originalRedirect = res.redirect;
 // app.listen を上書き
 app.listen = function listen(port) {
   var server = http.createServer(this);
-  return server.listen.apply(server, [3000]);
+  return server.listen.apply(server, [3000]); 
 };
 
 // createConnection を上書き
